@@ -59,6 +59,57 @@ alert(fruta.nome);*/
 // //alert(da);
 // alert(da.getDay());
 
-var lista = [“Alemanha”, “Inglaterra”, “Escócia”]
-lista.push(“Polônia”);
-lista.pop(“Inglaterra”);
+//Funcoes
+
+// function soma (n1, n2){
+//     return n1 + n2;
+// }
+
+// alert(soma(5,6));
+// console.log(soma(5,2));
+
+
+
+// function validaidade(idade){
+//     //var validar;
+//     if (idade>=18){
+//         alert("Entrada Liberada")
+//         //validar = true;
+//     }else{
+//         alert("Entrada Não Autorizada")
+//         //validar =  false;
+//     }
+//     //return validar;
+
+// }
+// var idade= prompt ("Digite Aqui sua idade: ");
+// (validaidade(idade));
+
+
+function botao(){
+    //alert("Clicado");
+    document.getElementById("agradecido").innerHTML = "Obrigado pelo clique";
+}
+
+function redirecionar(){
+    window.open("https://developer.mozilla.org/");
+    //window.location.href = "https://developer.mozilla.org/pt-BR/docs/Aprender/Front-end_web_developer";
+}
+
+function mexendo(elemento){
+    //document.getElementById("movemouse").innerHTML = "Passou";
+    //alert("Trocar texto")
+    elemento.innerHTML = "Passou";
+}
+
+function voltar(){
+    document.getElementById("movemouse").innerHTML = "Passe o mouse aqui";
+}
+
+function load(){
+    alert("Página carregada");
+}
+
+function mudar(elemento){
+    console.log(elemento.value);
+}

@@ -5,8 +5,16 @@
         <title>Minha Página</title>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-        <h1>Minha Página</h1>
-    
+    <body onload="load()">
+        <button type="button" onclick="botao()">Clique Aqui</button>
+        <p id="agradecido" onclick="redirecionar()"></p>
+        <p id="movemouse" onmouseover="mexendo(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p id="movemouse1" onmouseover="mexendo()" onmouseout="voltar()">Passe o mouse aqui</p>
+
+        <select onchange="mudar(this)">
+            <option value="1">V1</option>
+            <option value="2">V2</option>
+            <option value="3">V3</option>
+        </select>
     </body>
 </html>
